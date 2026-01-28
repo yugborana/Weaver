@@ -23,6 +23,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY app/ ./app/
+COPY evals/ ./evals/
+COPY eval_cases.json .
 COPY main.py .
 
 # Expose the port

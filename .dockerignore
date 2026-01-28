@@ -39,8 +39,6 @@ node_modules/
 !.env.example
 Procfile
 *.sql
-evals/
-eval_cases.json
 
 # Docker
 Dockerfile
