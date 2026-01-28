@@ -1,0 +1,48 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv
+venv/
+ENV/
+env/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Frontend (not needed for backend container)
+frontend/
+node_modules/
+
+# Misc
+*.log
+*.md
+!README.md
+.env
+.env.*
+!.env.example
+Procfile
+*.sql
+evals/
+eval_cases.json
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*.yml
