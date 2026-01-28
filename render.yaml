@@ -1,0 +1,26 @@
+# Render Blueprint configuration for backend deployment
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: weaver-backend
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.api.routes:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: GROQ_API_KEY
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false  # Set this to your Vercel frontend URL, e.g., https://weaver-frontend.vercel.app
+    healthCheckPath: /health
+    autoDeploy: true

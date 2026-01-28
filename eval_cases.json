@@ -1,0 +1,121 @@
+[
+    {
+        "input": "The current state of Quantum Computing in 2025",
+        "expected": "A report covering Qubits, Error Correction, and Major Players like IBM and Google.",
+        "name": "Quantum Computing Status",
+        "metadata": {
+            "difficulty": "medium",
+            "tags": [
+                "tech",
+                "quantum"
+            ],
+            "expected_tools": [
+                "web_search",
+                "wikipedia_search"
+            ],
+            "expected_sources": [
+                "IBM",
+                "Google",
+                "Nature"
+            ],
+            "known_facts": {
+                "ibm_quantum_roadmap": "IBM aims to build 100,000+ qubit systems",
+                "google_quantum_supremacy": "Achieved in 2019 with Sycamore processor"
+            }
+        }
+    },
+    {
+        "input": "History of the Roman Empire's fall",
+        "expected": "A summary of political instability, economic troubles, and barbarian invasions leading to 476 AD.",
+        "name": "Roman Empire Fall",
+        "metadata": {
+            "difficulty": "easy",
+            "tags": [
+                "history"
+            ],
+            "expected_tools": [
+                "web_search",
+                "wikipedia_search"
+            ],
+            "expected_sources": [
+                "Wikipedia",
+                "Encyclopedia Britannica"
+            ],
+            "known_facts": {
+                "fall_year": "476 AD",
+                "last_emperor": "Romulus Augustulus"
+            }
+        }
+    },
+    {
+        "input": "Impact of AI on Healthcare",
+        "expected": "Discussion on diagnosis, drug discovery, and personalized medicine.",
+        "name": "AI in Healthcare",
+        "metadata": {
+            "difficulty": "medium",
+            "tags": [
+                "tech",
+                "healthcare"
+            ],
+            "expected_tools": [
+                "web_search"
+            ],
+            "expected_sources": [
+                "PubMed",
+                "Nature Medicine",
+                "JAMA"
+            ],
+            "known_facts": {
+                "fda_approved_ai_devices": "Over 500 FDA-approved AI/ML medical devices as of 2024"
+            }
+        }
+    },
+    {
+        "input": "Causes of the French Revolution",
+        "expected": "Detailed analysis of social inequality, financial crisis, and Enlightenment ideas.",
+        "name": "French Revolution Causes",
+        "metadata": {
+            "difficulty": "hard",
+            "tags": [
+                "history"
+            ],
+            "expected_tools": [
+                "wikipedia_search",
+                "web_search"
+            ],
+            "expected_sources": [
+                "Wikipedia",
+                "History.com",
+                "Britannica"
+            ],
+            "known_facts": {
+                "revolution_start": "1789",
+                "key_event": "Storming of the Bastille on July 14, 1789"
+            }
+        }
+    },
+    {
+        "input": "Renewable Energy Trends 2024",
+        "expected": "Overview of solar, wind, and battery storage advancements.",
+        "name": "Renewable Energy Trends",
+        "metadata": {
+            "difficulty": "medium",
+            "tags": [
+                "energy",
+                "tech"
+            ],
+            "expected_tools": [
+                "web_search"
+            ],
+            "expected_sources": [
+                "IEA",
+                "BloombergNEF",
+                "IRENA"
+            ],
+            "known_facts": {
+                "solar_growth": "Record solar installations globally in 2024",
+                "battery_storage": "Grid-scale battery storage capacity doubled"
+            }
+        }
+    }
+]
