@@ -120,30 +120,6 @@ docker build -t weaver-backend .
 docker run -p 8000:8000 --env-file .env weaver-backend
 ```
 
----
-
-## 🧠 Challenges & Learnings
-
-During the development of Weave, we encountered and overcame several key challenges:
-
-1.  **RAG & Vector Search Validation**:
-    -   *Challenge*: Ensuring consistent retrieval accuracy across different embedding models and vector stores (Qdrant/Supabase).
-    -   *Solution*: Implemented rigorous validation scripts and evaluation routes (`/eval`) to verify retriever performance and reranking logic.
-
-2.  **Deployment on Free Tier Services**:
-    -   *Challenge*: Deploying the backend on Render's free tier resulted in "cold starts," causing initial requests to time out or fail.
-    -   *Solution*: Added a user-facing warning system in the frontend to inform users about potential delays, improving the UX despite infrastructure limitations.
-
-3.  **Frontend Build & Module Resolution**:
-    -   *Challenge*: Complex path aliases and module imports caused Vercel build failures.
-    -   *Solution*: Standardized the project structure and refined `tsconfig.json` and `next.config.ts` to ensure consistent module resolution across local and cloud environments.
-
-4.  **Agent Orchestration**:
-    -   *Challenge*: Coordinating multiple agents (Researcher -> Critic -> Reviser) to produce deterministic and high-quality results without infinite loops.
-    -   *Solution*: Designed a robust Orchestrator pattern with strict state management and timeout safeguards.
-
----
-
 ## 🧪 Evaluation Pipeline
 
 Weaver includes a comprehensive evaluation framework to ensure agent reliability and accuracy. The system rigorously tests the research agent against a set of predefined cases (`eval_cases.json`).
